@@ -1,0 +1,123 @@
+h5,
+h3,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(242, 246, 239, 1);
+  color: #333;
+}
+
+.meet-our-experts-container {
+  padding: 120px 80px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.container-header-button button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(229, 237, 222, 1);
+  border: 1px solid rgba(133, 168, 102, 1);
+  color: rgba(133, 168, 102, 1);
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container-header h5 {
+  color: rgba(133, 168, 102, 1);
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
+}
+
+.container-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 302px;
+}
+
+.slide-item-header {
+  position: relative;
+}
+
+.slide-item-header img {
+  display: block;
+}
+
+.slide-item-header button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 32px;
+  width: 32px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 24px;
+}
+
+.slide-item-body {
+  background-color: #fff;
+  height: 250px;
+  padding: 15px;
+}
+
+.slide-item-body h3 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(78, 78, 67, 1);
+}
+
+.slide-item-body h1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.slide-item-body ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(125, 126, 120, 1);
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container-button button {
+  width: 232px;
+  background-color: rgba(255, 156, 26, 1);
+  border: 1px solid rgba(255, 156, 26, 1);
+  border-radius: 24px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}

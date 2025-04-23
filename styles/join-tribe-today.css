@@ -1,0 +1,51 @@
+.joining-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 600px;
+  background: url("https://images.photowall.com/products/66700/abstract-wallpaper-ii.jpg?h=699&q=85");
+}
+
+.joining-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 646px;
+  padding: 50px 100px;
+  background-color: white;
+}
+
+.joining-content h1 {
+  margin: 0;
+  font-family: "PP Neue Machina";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #010101;
+  border-radius: 10px;
+}
+
+.joining-content p {
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #4e4e43;
+}
+
+.joining-content button {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #f0dddb;
+  border: 1.5px solid #c9877e;
+  color: #c9877e;
+  cursor: pointer;
+}

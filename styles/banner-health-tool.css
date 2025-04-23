@@ -1,0 +1,143 @@
+.banner-health-tool {
+  background: #eff2f6;
+  padding: 100px;
+  position: relative;
+  min-height: 618px;
+  margin-bottom: 50px;
+}
+
+.banner-health-tool-left {
+  width: 60%;
+}
+
+.banner-health-tool .health-tool-button {
+  font-size: 12px;
+  color: #ff9c1a;
+  background-color: #fff4e5;
+  border: 1px solid #f3ddbf;
+  height: 32px;
+  padding: 0;
+  border-radius: 32px;
+  width: 120px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 15px;
+}
+
+.banner-health-tool .title {
+  font-size: 48px;
+  font-family: "PP Neue Machina", sans-serif;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+.banner-health-tool .circle-block {
+  display: flex;
+}
+
+.banner-health-tool .circle-item {
+  width: 50%;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+.banner-health-tool .circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background-color: #d9d9d9;
+}
+
+.banner-health-tool .description {
+  font-size: 18px;
+  color: #4e4e43;
+}
+
+.banner-health-tool .button-block {
+  text-align: center;
+}
+
+.banner-health-tool .start-your-health-check-button {
+  background-color: #ff9c1a;
+  color: white;
+  border-radius: 24px;
+  font-size: 16px;
+  width: 273px;
+  height: 48px;
+  border: none;
+  margin-top: 30px;
+}
+
+.banner-health-tool-right {
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.banner-health-tool-right img {
+  width: 412px;
+  height: 100%;
+}
+
+.banner-health-tool-top {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .banner-health-tool {
+    padding: 70px 10px 30px;
+    min-height: auto;
+    margin-top: 0;
+  }
+
+  .banner-health-tool-top {
+    display: block;
+    margin-bottom: -53px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .banner-health-tool-top img {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .banner-health-tool-left {
+    width: 100%;
+  }
+
+  .banner-health-tool .health-tool-button {
+    height: 24px;
+  }
+
+  .banner-health-tool .title {
+    font-size: 24px;
+  }
+
+  .banner-health-tool .circle-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-health-tool .circle-item {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .banner-health-tool .description {
+    font-size: 16px;
+  }
+
+  .banner-health-tool .start-your-health-check-button {
+    width: 100%;
+  }
+
+  .banner-health-tool-right {
+    display: none;
+  }
+}

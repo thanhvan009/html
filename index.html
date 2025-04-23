@@ -5,41 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>WordPress</title>
-    <link rel="stylesheet" href="./shared.css" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/cta-banner.css" />
+    <link rel="stylesheet" href="./styles/about-us.css" />
+    <link rel="stylesheet" href="./styles/banner-health-tool.css" />
+    <link rel="stylesheet" href="./styles/yl-experts.css" />
+    <link rel="stylesheet" href="./styles/meet-our-experts.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="stylesheet" href="./styles/events.css" />
+    <link rel="stylesheet" href="./styles/join-tribe-today.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
-  <body>
-    <main>
-      <div class="container">
-        <!--start section about us-->
-        <section class="about-us">
-          <h1 class="title">About us</h1>
-          <p class="description">
-            Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum
-            sit nunc in eros scelerisque sed. Commodo in viverra nunc,
-            ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis,
-            pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo
-            eleifend ultricies purus iaculis.
-          </p>
-          <button class="more-about-us-button">MORE ABOUT US</button>
-          <div class="youtube-container">
-            <div class="responsive-iframe">
-  
-              <iframe src="https://www.youtube.com/embed/n0AB6pZpotg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
-          </div>
-        </section>
-        <!--end section about us-->
+  <style>
+    .bg-image {
+      background-image: url("./assets/office-workers-working-together-as-team-2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-        <!--start health tool-->
+    .events-banner {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      background: url("./assets/latest-events-banner.png") center/cover
+        no-repeat;
+    }
+  </style>
+  <body>
+    <!-- 1. start header -->
+    <div class="header-top">Join the Y:L Tribe Today</div>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">
+          <img class="header-logo-img" src="./assets/logo.png" />
+        </div>
+        <ul class="header-menu">
+          <li class="menu-item">ABOUT US</li>
+          <li class="menu-item">Y:L EXPERTS</li>
+          <li class="menu-item">PRODUCT</li>
+          <li class="menu-item">HEALTH TOOLS</li>
+          <li class="menu-item">COMMUNITY</li>
+        </ul>
+        <div class="actions">
+          <div class="action-item action-search">
+            <img class="search-icon" src="./assets/search-icon.png" />
+          </div>
+          <div class="action-item cart-list">
+            <img class="cart-list-icon" src="./assets/cart-list-icon.png" />
+          </div>
+          <div class="action-item login">
+            <button class="login-button">Login</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <main>
+      <!-- 2. start cta banner -->
+      <section class="cta-banner">
+        <div class="cta-banner-container">
+          <div class="cta-banner-content">
+            <img class="cta-banner-logo" src="./assets/logo.png" />
+            <div class="cta-banner-description">
+              Pellentesque convallis accumsan suscipit aliquet eu diam quis
+              nulla turpis. In mus massa lectus laoreet sed semper bibendum id.
+              Iaculis purus malesuada porttitor aliquam pulvinar.
+            </div>
+            <button class="cta-button">CTA</button>
+          </div>
+        </div>
+        <div class="cta-background">
+          <img class="cta-image" src="./assets/cta-banner.png" />
+        </div>
+      </section>
+      <!-- end cta banner -->
+
+      <!-- 3. start about us-->
+      <section class="about-us">
+        <h1 class="about-us-title">About us</h1>
+        <p class="about-us-description">
+          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
+          nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
+          Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum
+          scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies
+          purus iaculis.
+        </p>
+        <button class="about-us-more-button">MORE ABOUT US</button>
+        <div class="youtube-container">
+          <div class="responsive-iframe">
+            <iframe
+              src="https://www.youtube.com/embed/n0AB6pZpotg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <!-- end section about us-->
+
+      <!-- 4. start health tool-->
+      <div class="container">
         <section class="health-tool">
           <div class="banner-health-tool-top">
             <img src="./assets/health-tool-image-mobile.png" />
@@ -81,114 +157,180 @@
             </div>
           </div>
         </section>
-        <!--end health tool-->
-
-        <!-- Meet the team -->
-
       </div>
-      <div>
-        <div class="bg-image">
-            <div class="block-content">
-                <div class="block-content-right">
-                    <div class="content">
-                        <div>
-                            <span>Y:L Experts</span>
-                        </div>
-                        <h5>Meet the team, longevity Legends and Y:L Experts</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta ipsum sit amet nisl tristique malesuada. Donec et dignissim nibh. Etiam sem nulla, fringilla nec rutrum at, venenatis at sem. <br/> 
-                            Tristique elementum, ac maecenas enim fringilla placerat scelerisque semper.</p>
-                    </div>                    
-                </div>
-            </div>           
-        </div>
-    </div>
-      <!-- End Meet the team -->
+      <!-- end health tool-->
 
-      <!-- Meet our experts -->
+      <!-- 5. start Y:L Experts -->
+      <section class="yl-experts">
+        <div class="bg-image">
+          <div class="block-content">
+            <div class="block-content-right">
+              <div class="content">
+                <div>
+                  <span>Y:L Experts</span>
+                </div>
+                <h5>Meet the team, longevity Legends and Y:L Experts</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam porta ipsum sit amet nisl tristique malesuada. Donec
+                  et dignissim nibh. Etiam sem nulla, fringilla nec rutrum at,
+                  venenatis at sem. <br />
+                  Tristique elementum, ac maecenas enim fringilla placerat
+                  scelerisque semper.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Y:L Experts -->
+
+      <!-- 6. meet our experts -->
       <div class="meet-our-experts-container">
         <div class="container-header">
-            <h5>Meet our experts</h5>
-            <div class="container-header-button">
-                <button>&#8592;</button>
-                <button>&#8594;</button>
-            </div>
+          <h5>Meet our experts</h5>
+          <div class="container-header-button">
+            <button>&#8592;</button>
+            <button>&#8594;</button>
+          </div>
         </div>
         <div class="container-slide">
-            <div class="slide-item">
-                <div class="slide-item-header">
-                    <button>&#8599;</button>
-                    <img src="./assets/person-1.png"/>
-                </div>
-                <div class="slide-item-body">
-                    <h3>Dr. Clara Nguyen</h3>
-                    <h1>Health & Wellness Coach</h1>
-                    <ul>
-                        <li>10+ years guiding dietary therapy for chronic illness</li>
-                        <li>Board Certified by the Clinical Nutrition Association</li>
-                        <li>Featured speaker at Asia-Pacific Nutrition Summit 2023</li>
-                    </ul>
-                </div>
+          <div class="slide-item">
+            <div class="slide-item-header">
+              <button>&#8599;</button>
+              <img src="./assets/person-1.png" />
             </div>
+            <div class="slide-item-body">
+              <h3>Dr. Clara Nguyen</h3>
+              <h1>Health & Wellness Coach</h1>
+              <ul>
+                <li>10+ years guiding dietary therapy for chronic illness</li>
+                <li>Board Certified by the Clinical Nutrition Association</li>
+                <li>Featured speaker at Asia-Pacific Nutrition Summit 2023</li>
+              </ul>
+            </div>
+          </div>
 
-            <div class="slide-item">
-                <div class="slide-item-header">
-                    <button>&#8599;</button>
-                    <img src="./assets/person-2.png"/>
-                </div>
-                <div class="slide-item-body">
-                    <h3>Bob Smith</h3>
-                    <h1>Health & Wellness Coach</h1>
-                    <ul>
-                        <li>12+ years of experience in holistic health and preventive care</li>
-                        <li>Certified Integrative Nutrition Coach (IIN, New York)</li>
-                        <li>Winner of “Best Wellness Program Design” – Global Health Awards 2022</li>
-                    </ul>
-                </div>
+          <div class="slide-item">
+            <div class="slide-item-header">
+              <button>&#8599;</button>
+              <img src="./assets/person-2.png" />
             </div>
+            <div class="slide-item-body">
+              <h3>Bob Smith</h3>
+              <h1>Health & Wellness Coach</h1>
+              <ul>
+                <li>
+                  12+ years of experience in holistic health and preventive care
+                </li>
+                <li>Certified Integrative Nutrition Coach (IIN, New York)</li>
+                <li>
+                  Winner of “Best Wellness Program Design” – Global Health
+                  Awards 2022
+                </li>
+              </ul>
+            </div>
+          </div>
 
-            <div class="slide-item">
-                <div class="slide-item-header">
-                    <button>&#8599;</button>
-                    <img src="./assets/person-3.png"/>
-                </div>
-                <div class="slide-item-body">
-                    <h3>Amelia Torres</h3>
-                    <h1>Mental Health Counselor</h1>
-                    <ul>
-                        <li>15+ years in emotional resilience and stress recovery</li>
-                        <li>Licensed Mental Health Practitioner (LMHP)</li>
-                        <li>TEDx speaker: “The Power of Quiet Healing”</li>
-                    </ul>
-                </div>
+          <div class="slide-item">
+            <div class="slide-item-header">
+              <button>&#8599;</button>
+              <img src="./assets/person-3.png" />
             </div>
-            
-            <div class="slide-item">
-                <div class="slide-item-header">
-                    <button>&#8599;</button>
-                    <img src="./assets/person-4.png"/>
-                </div>
-                <div class="slide-item-body">
-                    <h3>Dr. Ravi Kannan</h3>
-                    <h1>Sports & Rehab Specialist</h1>
-                    <ul>
-                        <li>18 years treating athletic injuries and performance recovery</li>
-                        <li>Consultant for 3 Olympic teams</li>
-                        <li>Published in The Journal of Sports Medicine</li>
-                    </ul>
-                </div>
+            <div class="slide-item-body">
+              <h3>Amelia Torres</h3>
+              <h1>Mental Health Counselor</h1>
+              <ul>
+                <li>15+ years in emotional resilience and stress recovery</li>
+                <li>Licensed Mental Health Practitioner (LMHP)</li>
+                <li>TEDx speaker: “The Power of Quiet Healing”</li>
+              </ul>
             </div>
+          </div>
+
+          <div class="slide-item">
+            <div class="slide-item-header">
+              <button>&#8599;</button>
+              <img src="./assets/person-4.png" />
+            </div>
+            <div class="slide-item-body">
+              <h3>Dr. Ravi Kannan</h3>
+              <h1>Sports & Rehab Specialist</h1>
+              <ul>
+                <li>
+                  18 years treating athletic injuries and performance recovery
+                </li>
+                <li>Consultant for 3 Olympic teams</li>
+                <li>Published in The Journal of Sports Medicine</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="container-button">
-            <button>Explore our experts</button>
+          <button>Explore our experts</button>
         </div>
-        
-    </div>
-      <!-- End Meet the tem-->
+      </div>
+      <!-- end meet our experts-->
 
+      <!-- start product -->
+      <div class="products">
+        <div class="product-section">
+          <div class="grid-container">
+            <div class="card card1">
+              <img src="./assets/top-view-assortment-vegetables-paper-bag-1.png" alt="Nutrition">
+              <div>
+                  <h2>Y:L Nutrition</h2>
+                  <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              </div>
+            </div>
+            <div class="card card2">        
+              <div>
+                  <h2>Y:L Health</h2>
+                  <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              </div>
+              <img src="./assets/healthy-icon.png" alt="Health">
+            </div>
+            <div class="card card3">
+              <div>
+                  <h2>Y:L Education</h2>
+                  <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              </div>
+              <img src="./assets/education.png" alt="Education">
+            </div>
+            <div class="card card4">
+              <div>        
+                  <h2>Y:L Recovery</h2>
+                  <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              </div>
+              <img src="./assets/recovery-status.png" alt="Recovery">
+            </div>
+            <div class="card card5">
+              <div>
+                  <h2>Y:L Fitness</h2>
+                  <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              </div>
+              <img src="./assets/fitness.png" alt="Fitness">
+            </div>
+            <div class="card card6">
+              <div>
+                  <h2>Y:L Social Interaction</h2>
+                  <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              </div>
+              <img src="./assets/social-interaction.png" alt="Social" style="height: 55%;">
+            </div>
+          </div>
+          <button class="more-btn">view more products</button>
+        </div>
+      </div>
+      <!-- end product -->
+
+      <!-- 7. start events -->
       <section class="events">
         <div class="events-community">
           <button class="events-community-button">COMMUNITY</button>
-          <h1 class="events-community-title">Lorem, ipsum est donna verda virta post lorem ipsum</h1>
+          <h1 class="events-community-title">
+            Lorem, ipsum est donna verda virta post lorem ipsum
+          </h1>
         </div>
         <div class="events-banner">
           <div class="latest-events">
@@ -207,53 +349,72 @@
             <img src="./assets/event-1.png" alt="event-1" />
             <h3>Expert workshops</h3>
             <h2>Event1</h2>
-            <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            <p>
+              Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
+            </p>
           </li>
           <li class="events-list-item">
             <img src="./assets/event-2.png" alt="event-2" />
             <h3>Expert workshops</h3>
             <h2>Event2</h2>
-            <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            <p>
+              Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
+            </p>
           </li>
           <li class="events-list-item">
             <img src="./assets/event-3.png" alt="event-3" />
             <h3>Expert workshops</h3>
             <h2>Event3</h2>
-            <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            <p>
+              Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
+            </p>
           </li>
           <li class="events-list-item">
             <img src="./assets/event-4.png" alt="event-4" />
             <h3>Expert workshops</h3>
             <h2>Event4</h2>
-            <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            <p>
+              Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
+            </p>
           </li>
         </ul>
         <button class="view-more-events">VIEW MORE EVENT</button>
       </section>
 
+      <!-- end events -->
+
+      <!-- 8. start join tribe today-->
       <section class="joining-background">
         <div class="joining-content">
           <h1>Join the Y:L Tribe Today</h1>
-          <p>Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.</p>
+          <p>
+            Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum
+            sit nunc in eros scelerisque sed. Commodo in viverra nunc,
+            ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis,
+            pulvinar.
+          </p>
           <button>JOIN NOW</button>
         </div>
       </section>
+      <!-- end join tribe today-->
     </main>
-    <script src="index.js"></script>
   </body>
-    
+  <!-- 9. start footer -->
   <footer>
     <section class="subscription-section">
       <h1>Younger:Longer</h1>
       <div class="email-section">
         <div class="email-field">
-          <img src="./assets/email.png" alt="email">
-          <input type="email" placeholder="Enter your email to get the latest news..." />
+          <img src="./assets/email.png" alt="email" />
+          <input
+            type="email"
+            placeholder="Enter your email to get the latest news..."
+          />
         </div>
         <button>Subscribe</button>
       </div>
     </section>
-    
+
     <div class="divider"></div>
 
     <section class="nav-section">
@@ -265,10 +426,18 @@
         <div class="join-us">
           <h4>Join Us</h4>
           <div class="socials">
-            <a href="#" class="nav-img"><img src="./assets/youtube.png" alt="youtube"></a>
-            <a href="#" class="nav-img"><img src="./assets/facebook.png" alt="facebook"></a>
-            <a href="#" class="nav-img"><img src="./assets/instagram.png" alt="instagram"></a>
-            <a href="#" class="nav-img"><img src="./assets/linkedin.png" alt="linked"></a>
+            <a href="#" class="nav-img"
+              ><img src="./assets/youtube.png" alt="youtube"
+            /></a>
+            <a href="#" class="nav-img"
+              ><img src="./assets/facebook.png" alt="facebook"
+            /></a>
+            <a href="#" class="nav-img"
+              ><img src="./assets/instagram.png" alt="instagram"
+            /></a>
+            <a href="#" class="nav-img"
+              ><img src="./assets/linkedin.png" alt="linked"
+            /></a>
           </div>
         </div>
       </div>
@@ -313,4 +482,5 @@
       </div>
     </section>
   </footer>
+  <!-- end footer -->
 </html>
