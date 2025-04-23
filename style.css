@@ -1,0 +1,531 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* start - about us */
+.about-us {
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-us .title {
+  font-size: 48px;
+  color: #010101;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.about-us .description {
+  font-size: 18px;
+  color: #4e4e43;
+  margin: 0 0 30px;
+}
+
+.about-us .more-about-us-button {
+  font-size: 16px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  background: transparent;
+  margin: 0 0 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.youtube-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #000;
+  /* Black background looks better for video */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-caption {
+  padding: 12px 8px;
+  color: #fff;
+  background: #000;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 768px-991px (Tablets in landscape) */
+@media (min-width: 768px) {
+  .youtube-container {
+      max-width: 90%;
+      padding: 20px;
+  }
+
+  .video-caption {
+      font-size: 16px;
+      padding: 18px 15px;
+  }
+}
+
+/* 992px and up (Desktop) */
+@media (min-width: 992px) {
+  .youtube-container {
+      max-width: 850px;
+      padding: 25px;
+      border-radius: 20px;
+  }
+
+  .video-caption {
+      font-size: 17px;
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us {
+      width: auto;
+      padding: 20px 10px;
+  }
+
+  .about-us .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+  }
+
+  .about-us .description {
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+
+  .about-us .more-about-us-button {
+      font-size: 16px;
+      margin-bottom: 30px;
+  }
+}
+
+/* 481px-767px (Larger phones/tablets in portrait) */
+@media (min-width: 481px) {
+  .youtube-container {
+      padding: 15px;
+      border-radius: 16px;
+  }
+
+  .video-caption {
+      font-size: 15px;
+      padding: 15px 10px;
+  }
+}
+
+/* Special styling for very small devices (under 360px) */
+@media (max-width: 360px) {
+  .youtube-container {
+      padding: 8px;
+      border-radius: 8px;
+  }
+
+  .video-caption {
+      font-size: 13px;
+      padding: 10px 6px;
+  }
+}
+
+/* end - about us */
+
+/* start - health tool */
+.banner-health-tool {
+  background: #eff2f6;
+  padding: 100px;
+  position: relative;
+  min-height: 618px;
+  margin-bottom: 50px;
+}
+
+.banner-health-tool-left {
+  width: 60%;
+}
+
+.banner-health-tool .health-tool-button {
+  font-size: 12px;
+  color: #ff9c1a;
+  background-color: #fff4e5;
+  border: 1px solid #f3ddbf;
+  height: 32px;
+  padding: 0;
+  border-radius: 32px;
+  width: 120px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 15px;
+}
+
+.banner-health-tool .title {
+  font-size: 48px;
+  font-family: "PP Neue Machina", sans-serif;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+.banner-health-tool .circle-block {
+  display: flex;
+}
+
+.banner-health-tool .circle-item {
+  width: 50%;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+.banner-health-tool .circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background-color: #d9d9d9;
+}
+
+.banner-health-tool .description {
+  font-size: 18px;
+  color: #4e4e43;
+}
+
+.banner-health-tool .button-block {
+  text-align: center;
+}
+
+.banner-health-tool .start-your-health-check-button {
+  background-color: #ff9c1a;
+  color: white;
+  border-radius: 24px;
+  font-size: 16px;
+  width: 273px;
+  height: 48px;
+  border: none;
+  margin-top: 30px;
+}
+
+.banner-health-tool-right {
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.banner-health-tool-right img {
+  width: 412px;
+  height: 100%;
+}
+
+.banner-health-tool-top {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .banner-health-tool {
+      padding: 70px 10px 30px;
+      min-height: auto;
+      margin-top: 0;
+  }
+
+  .banner-health-tool-top {
+      display: block;
+      margin-bottom: -53px;
+      z-index: 1;
+      position: relative;
+  }
+
+
+  .banner-health-tool-top img {
+      width: 100%;
+      height: auto;
+      padding: 0 20px;
+  }
+
+  .banner-health-tool-left {
+      width: 100%;
+  }
+
+  .banner-health-tool .health-tool-button {
+      height: 24px;
+  }
+
+  .banner-health-tool .title {
+      font-size: 24px;
+  }
+
+  .banner-health-tool .circle-block {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .banner-health-tool .circle-item {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .banner-health-tool .description {
+      font-size: 16px;
+  }
+
+  .banner-health-tool .start-your-health-check-button {
+      width: 100%;
+  }
+
+
+  .banner-health-tool-right {
+      display: none;
+  }
+}
+
+/* end - health tool */
+
+/* start - joining */
+
+.joining-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 600px;
+  background: url('https://images.photowall.com/products/66700/abstract-wallpaper-ii.jpg?h=699&q=85');
+}
+
+.joining-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 646px;
+  padding: 50px 100px;
+  background-color: white;
+}
+
+.joining-content h1 {
+  margin: 0;
+  font-family: "PP Neue Machina";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #010101;
+  border-radius: 10px;
+}
+
+.joining-content p {
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #4E4E43
+}
+
+.joining-content button {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #F0DDDB;
+  border: 1.5px solid #C9877E;
+  color: #C9877E;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #C9877E;
+}
+
+footer .subscription-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+footer .subscription-section h1 {
+  margin: 0;
+  font-family: "PP Neue Machina";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+footer .subscription-section .email-section {
+  display: flex;
+  align-items: center;
+  background-color: rebeccapurple;
+}
+
+footer .subscription-section .email-field {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  gap: 8px;
+  padding: 0px 10px;
+}
+
+footer .subscription-section input {
+  height: 48px;
+  width: 349px;
+  padding: 0px;
+  border: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+footer .subscription-section button {
+  padding: 0px;
+  height: 48px;
+  width: 132px;
+  color: white;
+  border: none;
+  background-color: #010101;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #DDA8A2;
+  margin: 35px 0px;
+}
+
+footer .nav-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+footer .nav-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .nav-title:hover {
+  opacity: 0.8;
+}
+
+footer .nav-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .nav-text:hover {
+  opacity: 0.8;
+}
+
+footer .nav-img {
+  color: white;
+  text-decoration: none;
+}
+
+footer .nav-img:hover {
+  opacity: 0.8;
+}
+
+footer .nav-section .about-us-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .nav-section .about-us-group .join-us {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .nav-section .about-us-group .socials {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+footer .nav-section h4 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+footer .nav-section p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+
+footer .bottom .sentence {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+
+footer .bottom .tags {
+  display: flex;
+  gap: 30px;
+}
+
+footer .bottom .tags p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
